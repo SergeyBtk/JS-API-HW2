@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2>Слайдер</h2>
+   <section class="slider">
+      <div class="btn-wrap">
+         <button class="old-img">Предыдущее изображение</button>
+         <button class="last-img">Следующее изображение</button>
+      </div>
+      <div class="container">
+        <img
+            src="/card_1.jpg"
+            alt="card_1">
+      </div>
+      <div class="current-image">
+        <img
+            src="/card_2.jpg"
+            alt="card_2">
+        <img
+            src="/card_3.jpg"
+            alt="card_3">
+        <img
+            src="/card_4.jpg"
+            alt="card_4">
+        <img
+            src="/card_5.jpg"
+            alt="card_5">
+        <img
+            src="/card_6.jpg"
+            alt="card_6">
+        <img
+            src="/card_1.jpg"
+            alt="card_1">
+      </div>
+   </section>
+</body>
+<style>
+    .slider {
+    border: 1px solid black;
+    width: max-content;
+    padding: 10px 20px;
+    background: #ffffff;
+    }
+
+    .current-image {
+    text-align: center;
+    }
+
+    .current-image img {
+    width: 60px;
+    height: 80px;
+    }
+
+    .item {
+    background: #F0C54D;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    }
+
+    .active {
+    background: #DCE1ED;
+    }
+
+    .container img {
+    width: 480px;
+    margin: 40px 0px;
+    }
+
+    .btn-wrap {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    }
+
+    .btn-wrap button {
+    height: 40px;
+    background: #616167;
+    color: white;
+    text-transform: uppercase;
+    }
+</style>
+</html>
